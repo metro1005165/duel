@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/attackIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@string/attack_icon_desc" 
+        android:background="@drawable/attack"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/attack_text" 
+                android:layout_gravity="center"
+                android:textColor="@color/Red"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed"/>
+
+            <CheckBox
+                android:id="@+id/cbHeadAttack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/head_attack" />
+            
+            <CheckBox
+                android:id="@+id/cbBodyAttack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/body_attack" />
+            
+            <CheckBox
+                android:id="@+id/cbAbdomenAttack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abdomen_attack" />
+            
+            <CheckBox
+                android:id="@+id/cbLegAttack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leg_attack"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/block_text" 
+                android:layout_gravity="center"
+                android:textColor="@color/Green"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-condensed"
+                />
+
+            <CheckBox
+                android:id="@+id/cbHeadBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/head_block" />
+            
+            <CheckBox
+                android:id="@+id/cbBodyBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/body_block" />
+            
+            <CheckBox
+                android:id="@+id/cbAbdomenBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/abdomen_block" />
+            
+            <CheckBox
+                android:id="@+id/cbLegBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leg_block"/>
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

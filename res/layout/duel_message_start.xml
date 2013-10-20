@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/tvStartTime"
+        android:textColor="@color/Green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fight_between"
+        android:layout_marginRight="5dp"/>
+    <TextView 
+        android:id="@+id/tvOrangePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Orange"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"/>
+    <ImageView 
+        android:id="@+id/orangePlayerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question"
+        android:contentDescription="@string/player_info"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="5dp"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/and"
+        android:layout_marginRight="5dp"/>
+    <TextView 
+        android:id="@+id/tvBluePlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Blue"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"/>
+    <ImageView 
+        android:id="@+id/bluePlayerIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/question"
+        android:contentDescription="@string/player_info"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="5dp"/>
+
+</LinearLayout>

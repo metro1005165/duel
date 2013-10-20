@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">DuelView</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="attack_icon_desc">Attack</string>
+    <string name="attack_text">Attack</string>
+    <string name="block_text">Block</string>
+    <string name="head_attack">Head Attack</string>
+    <string name="body_attack">Body Attack</string>
+    <string name="abdomen_attack">Abdomen Attack</string>
+    <string name="leg_attack">Leg Attack</string>
+    <string name="head_block">Head Block</string>
+    <string name="body_block">Body Block</string>
+    <string name="abdomen_block">Abdomen Block</string>
+    <string name="leg_block">Leg Block</string>
+    <string name="duel_action_title">Player performing attack</string>
+    <string name="fight_between">A fight has started between</string>
+    <string name="and">and</string>
+    <string name="player_info">Player Info</string>
+    <string name="not_yet">Not yet ready!</string>
+    <string name="duel_start_msg">Duel Start Message</string>
+    <string name="duel_fight_msg">Duel Fight Message</string>
+    <string name="duel_finish_msg">Duel Finish Message</string>
+    
+    <string name="orc_minus_5_xp">Orc -5 Hp</string>
+    
+
+</resources>

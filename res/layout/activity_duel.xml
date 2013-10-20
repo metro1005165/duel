@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:components="http://schemas.android.com/apk/res/com.game.duel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="100dp"
+            android:orientation="vertical" >
+
+            <ProgressBar
+                android:id="@+id/player1HpBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:progress="100"
+                android:progressDrawable="@drawable/progressbar"
+              />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/orc"
+                android:contentDescription="@string/attack_icon_desc" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="350dp"
+            android:layout_height="match_parent" >
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </FrameLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <com.game.duel.HpBar
+                android:id="@+id/player2HpBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:maxHeight="20dp"
+                android:minHeight="20dp"
+                android:progress="100"
+                android:progressDrawable="@drawable/progressbar"
+                components:text="[64/64]"
+                components:textColor="@android:color/black"
+                components:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/worgen"
+                android:contentDescription="@string/attack_icon_desc" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btnStartMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duel_start_msg" />
+
+            <Button
+                android:id="@+id/btnFightMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duel_fight_msg" />
+
+            <Button
+                android:id="@+id/btnFinishMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/duel_finish_msg" />
+            
+            <Button
+                android:paddingTop="20dp"
+                android:id="@+id/btnOrcHit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/orc_minus_5_xp"
+                android:onClick="Calculate" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/duelMessageList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="@color/Transparent"
+            android:stackFromBottom="true" />
+    </LinearLayout>
+
+</LinearLayout>
