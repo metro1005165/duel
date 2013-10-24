@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import android.app.Activity;
-import android.app.FragmentTransaction;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.game.duel.FragmentDuelTop.OnCheckBoxSelectedListener;
 
-public class DuelActivity extends Activity implements OnCheckBoxSelectedListener {
+public class DuelActivity extends FragmentActivity implements OnCheckBoxSelectedListener {
 	
 	private List<DuelMessage> duelMessages = new ArrayList<DuelMessage>();
 	private DuelMessageAdapter duelMessageAdapter;
@@ -38,7 +38,7 @@ public class DuelActivity extends Activity implements OnCheckBoxSelectedListener
 		
 		FragmentDuelTop duelTop = FragmentDuelTop.newInstance();
 		if (duelTop != null) {	
-			FragmentTransaction ft = getFragmentManager().beginTransaction();
+			FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.fragment_container, duelTop).commit();
 		}
 		Log.e("DuelActivity", "Inflated Fragment - success");

@@ -201,49 +201,56 @@ containing a value of this type.
         public static final int question=0x7f020007;
         public static final int redprogressbar=0x7f020008;
         public static final int santa_money=0x7f020009;
-        public static final int viking_angry=0x7f02000a;
-        public static final int worgen=0x7f02000b;
+        public static final int skull=0x7f02000a;
+        public static final int viking_angry=0x7f02000b;
+        public static final int worgen=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f090018;
-        public static final int attackIcon=0x7f09000f;
-        public static final int bluePlayerIcon=0x7f09000e;
+        public static final int action_settings=0x7f090019;
+        public static final int attackIcon=0x7f090010;
+        public static final int bluePlayerIcon=0x7f09000f;
         public static final int btnFightMsg=0x7f090004;
         public static final int btnFinishMsg=0x7f090005;
         public static final int btnOrcHit=0x7f090006;
         public static final int btnStartMsg=0x7f090003;
-        public static final int cbAbdomenAttack=0x7f090012;
-        public static final int cbAbdomenBlock=0x7f090016;
-        public static final int cbBodyAttack=0x7f090011;
-        public static final int cbBodyBlock=0x7f090015;
-        public static final int cbHeadAttack=0x7f090010;
-        public static final int cbHeadBlock=0x7f090014;
-        public static final int cbLegAttack=0x7f090013;
-        public static final int cbLegBlock=0x7f090017;
+        public static final int cbAbdomenAttack=0x7f090013;
+        public static final int cbAbdomenBlock=0x7f090017;
+        public static final int cbBodyAttack=0x7f090012;
+        public static final int cbBodyBlock=0x7f090016;
+        public static final int cbHeadAttack=0x7f090011;
+        public static final int cbHeadBlock=0x7f090015;
+        public static final int cbLegAttack=0x7f090014;
+        public static final int cbLegBlock=0x7f090018;
         public static final int duelMessageList=0x7f090007;
         public static final int fragment_container=0x7f090001;
-        public static final int orangePlayerIcon=0x7f09000c;
+        public static final int orangePlayerIcon=0x7f09000d;
+        public static final int pager=0x7f090008;
         public static final int player1HpBar=0x7f090000;
         public static final int player2HpBar=0x7f090002;
-        public static final int tvBluePlayer=0x7f09000d;
-        public static final int tvFight=0x7f090008;
-        public static final int tvFinish=0x7f090009;
-        public static final int tvOrangePlayer=0x7f09000b;
-        public static final int tvStartTime=0x7f09000a;
+        public static final int tvBluePlayer=0x7f09000e;
+        public static final int tvFight=0x7f090009;
+        public static final int tvFinish=0x7f09000a;
+        public static final int tvOrangePlayer=0x7f09000c;
+        public static final int tvStartTime=0x7f09000b;
     }
     public static final class layout {
         public static final int activity_duel=0x7f030000;
-        public static final int duel_message_fight=0x7f030001;
-        public static final int duel_message_finish=0x7f030002;
-        public static final int duel_message_start=0x7f030003;
-        public static final int fragment_duel_top=0x7f030004;
+        public static final int activity_main=0x7f030001;
+        public static final int duel_message_fight=0x7f030002;
+        public static final int duel_message_finish=0x7f030003;
+        public static final int duel_message_start=0x7f030004;
+        public static final int fragment_char_details=0x7f030005;
+        public static final int fragment_duel_top=0x7f030006;
+        public static final int fragment_duels=0x7f030007;
+        public static final int fragment_locations=0x7f030008;
     }
     public static final class menu {
         public static final int character_details=0x7f080000;
         public static final int duel=0x7f080001;
         public static final int fights=0x7f080002;
         public static final int location=0x7f080003;
-        public static final int starting_location=0x7f080004;
+        public static final int main=0x7f080004;
+        public static final int starting_location=0x7f080005;
     }
     public static final class string {
         public static final int abdomen_attack=0x7f060008;
@@ -256,9 +263,11 @@ containing a value of this type.
         public static final int block_text=0x7f060005;
         public static final int body_attack=0x7f060007;
         public static final int body_block=0x7f06000b;
+        public static final int char_details_screen=0x7f060018;
         public static final int duel_action_title=0x7f06000e;
         public static final int duel_fight_msg=0x7f060014;
         public static final int duel_finish_msg=0x7f060015;
+        public static final int duel_list_screen=0x7f060019;
         public static final int duel_start_msg=0x7f060013;
         public static final int fight_between=0x7f06000f;
         public static final int head_attack=0x7f060006;
@@ -266,9 +275,11 @@ containing a value of this type.
         public static final int hello_world=0x7f060002;
         public static final int leg_attack=0x7f060009;
         public static final int leg_block=0x7f06000d;
+        public static final int location_list_screen=0x7f06001a;
         public static final int not_yet=0x7f060012;
         public static final int orc_minus_5_xp=0x7f060016;
         public static final int player_info=0x7f060011;
+        public static final int title_activity_main=0x7f060017;
     }
     public static final class style {
         /** 

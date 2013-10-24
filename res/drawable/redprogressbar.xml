@@ -2,6 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
     <item android:id="@android:id/background">
         <shape>
+            <corners android:radius="10dip" />
             <gradient
                     android:startColor="#000001"
                     android:centerColor="#0b131e"
@@ -14,6 +15,7 @@
     <item android:id="@android:id/progress">
         <clip>
             <shape>
+                <corners android:radius="10dip" />
                 <gradient
                     android:startColor="#ff0000"
                     android:centerColor="#dd0000"

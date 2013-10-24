@@ -23,8 +23,10 @@
     <string name="duel_start_msg">Duel Start Message</string>
     <string name="duel_fight_msg">Duel Fight Message</string>
     <string name="duel_finish_msg">Duel Finish Message</string>
-    
     <string name="orc_minus_5_xp">Orc -5 Hp</string>
-    
+    <string name="title_activity_main">MainActivity</string>
+    <string name="char_details_screen">Character Details Screen</string>
+    <string name="duel_list_screen">Duel List Screen</string>
+    <string name="location_list_screen">Location List Screen</string>
 
 </resources>

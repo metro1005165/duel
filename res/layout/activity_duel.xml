@@ -16,8 +16,8 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="100dp"
             android:orientation="vertical" >
-
-            <ProgressBar
+            
+            <com.game.duel.HpBar
                 android:id="@+id/player1HpBar"
                 style="@android:style/Widget.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
@@ -27,7 +27,9 @@
                 android:minHeight="20dp"
                 android:progress="100"
                 android:progressDrawable="@drawable/progressbar"
-              />
+                components:text="[64/64]"
+                components:textColor="@android:color/black"
+                components:textSize="14sp" />
 
             <ImageView
                 android:layout_width="match_parent"
@@ -110,8 +112,7 @@
                 android:id="@+id/btnOrcHit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/orc_minus_5_xp"
-                android:onClick="Calculate" />
+                android:text="@string/orc_minus_5_xp" />
         </LinearLayout>
 
         <ListView
@@ -120,8 +121,7 @@
             android:layout_height="wrap_content"
             android:focusable="false"
             android:focusableInTouchMode="false"
-            android:listSelector="@color/Transparent"
-            android:stackFromBottom="true" />
+            android:listSelector="@color/Transparent"/>
     </LinearLayout>
 
 </LinearLayout>
